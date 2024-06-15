@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #202124;
+    color: #c4bcbc;
+}
+.container{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    width: 100%;
+    max-width: 500px;
+}
+.searchbar{
+    border: 2px solid #5f6368;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    margin-top: 24px;
+}
+.search-menu{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+.search-icon{
+    width: 24px;
+}
+.searchbar:hover{
+    background-color: #303134;
+    border-color: #303134;
+    box-shadow: 0px 0px 4px 2px #1f2022;
+    border-radius: 40px 40px 0 0;
+}
+.searchbar:focus-within{
+    background-color: #303134;
+    border-color: #303134;
+    box-shadow: 32px 32px 0px 0px #1f2022;
+}
+.searchbar input{
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color:inherit;
+   width: 100%;
+   padding: 10px;
+   font-size: 18px;
+   font-family: inherit;
+   /* background-color: pink; */
+}
+.suggetion-menu{ 
+    border-radius: 0 0 32px 32px;
+    background: #303134;
+    box-shadow: 0px 6px 4px 2px #1f2022;
+    padding: 0px 24px 24px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+top-border{
+    border-top: 2px solid #64676b;
+    margin-inline: 24px;
+    margin-bottom: 8px;
+}
+.suggetion-menu p{
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.suggetion-menu p:hover{
+    cursor: pointer;
+    background-color: #1f2022;
+    border-radius: 4px;
+}
+.searchbar:focus-within + .suggetion-menu {
+             display: block;
+}
+.doodle-shapes{
+position: fixed;
+right: 32px;
+bottom: 0;
+}
